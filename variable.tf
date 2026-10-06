@@ -70,3 +70,31 @@ variable "storage_account_name" {
   description = "Name of the Azure Storage Account"
   type        = string
 }
+
+variable "aks_name" {
+  description = "Name of the AKS cluster"
+  type        = string
+}
+
+variable "aks_dns_prefix" {
+  description = "DNS prefix for AKS"
+  type        = string
+}
+
+variable "kubernetes_version" {
+  description = "Kubernetes version"
+  type        = string
+  default     = null
+}
+
+variable "aks_node_count" {
+  description = "Number of AKS worker nodes"
+  type        = number
+  default     = 2
+}
+
+variable "aks_vm_size" {
+  description = "VM size for AKS worker nodes"
+  type        = string
+  default     = "Standard_D2s_v5"
+}
