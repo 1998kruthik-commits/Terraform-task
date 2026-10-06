@@ -1,6 +1,5 @@
-# ============================================================
 # Resource Group Outputs
-# ============================================================
+
 
 output "resource_group_name" {
   description = "Name of the Azure Resource Group"
@@ -13,9 +12,9 @@ output "resource_group_location" {
 }
 
 
-# ============================================================
+
 # Virtual Network Outputs
-# ============================================================
+
 
 output "vnet_name" {
   description = "Name of the Virtual Network"
@@ -33,9 +32,9 @@ output "vnet_address_space" {
 }
 
 
-# ============================================================
+
 # Subnet Outputs
-# ============================================================
+
 
 output "subnet_name" {
   description = "Name of the Subnet"
@@ -53,9 +52,9 @@ output "subnet_address_prefixes" {
 }
 
 
-# ============================================================
+
 # Network Security Group Outputs
-# ============================================================
+
 
 output "nsg_name" {
   description = "Name of the Network Security Group"
@@ -68,9 +67,8 @@ output "nsg_id" {
 }
 
 
-# ============================================================
 # Public IP Outputs
-# ============================================================
+
 
 output "public_ip_addresses" {
   description = "Public IP addresses assigned to the VMs"
@@ -83,9 +81,9 @@ output "public_ip_ids" {
 }
 
 
-# ============================================================
+
 # Network Interface Outputs
-# ============================================================
+
 
 output "network_interface_names" {
   description = "Names of the VM Network Interfaces"
@@ -98,9 +96,9 @@ output "network_interface_ids" {
 }
 
 
-# ============================================================
+
 # Virtual Machine Outputs
-# ============================================================
+# 
 
 output "vm_names" {
   description = "Names of the Linux Virtual Machines"
@@ -123,9 +121,7 @@ output "vm_size" {
 }
 
 
-# ============================================================
 # Storage Account Outputs
-# ============================================================
 
 output "storage_account_name" {
   description = "Name of the Azure Storage Account"
@@ -148,9 +144,7 @@ output "storage_account_primary_location" {
 }
 
 
-# ============================================================
-# AKS Outputs
-# ============================================================
+
 
 output "aks_name" {
   description = "Name of the AKS cluster"
@@ -198,9 +192,7 @@ output "aks_identity_tenant_id" {
 }
 
 
-# ============================================================
-# AKS Kubeconfig Command
-# ============================================================
+
 
 output "aks_get_credentials_command" {
   description = "Azure CLI command to configure kubectl access to AKS"
@@ -208,9 +200,6 @@ output "aks_get_credentials_command" {
 }
 
 
-# ============================================================
-# Useful kubectl Commands
-# ============================================================
 
 output "kubectl_get_nodes_command" {
   description = "Command to check AKS nodes"
